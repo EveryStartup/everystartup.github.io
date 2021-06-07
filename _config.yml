@@ -1,3 +1,34 @@
 remote_theme: y7kim/agency-jekyll-theme
+
+url: https://everystartup.io
+baseurl: /
+
+# Site settings
 title: EveryStartup
-description: Consulting on solutions to the challenges faced by every startup
+email: hello@everystartup.io
+description: "Consulting on solutions to the challenges faced by every startup."
+
+
+# Team names, titles and social links
+people:
+- name: Technology Chief
+  pic: 1
+  position: CTO
+  social:
+    - title: twitter
+      url: https://twitter.com/everyCTO
+    - title: github
+      url: https://github.com/everyCTO
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, twitter, facebook, stack-overflow, bitbucket, etc.)
+social:
+  - title: github
+    url: http://github.com/EveryStartup
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Continental United States
+
+# Build settings
+markdown: kramdown
+permalink: pretty
