@@ -2,8 +2,19 @@
 layout: default
 ---
 
-# Every startup faces common challenges
+<div class="home">
 
-Billing. User Management. Security. Compliance.
+# Posts
 
-These are a few of the areas where we can help.
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
